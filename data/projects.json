@@ -1,0 +1,79 @@
+{
+  "products": [
+    {
+      "id": "mykit",
+      "status": "Live",
+      "icon": "🧰",
+      "iconImg": "https://oryxen.tech/mykit/favicon.ico",
+      "title": "MyKit",
+      "description": "Your personal developer toolkit. Snippets, shortcuts, and utilities — always at hand, always offline-ready.",
+      "tags": ["Developer Tools", "PWA", "Offline-first", "JavaScript"],
+      "url": "https://oryxen.tech/mykit/",
+      "ariaLabel": "Visit MyKit — Developer Toolkit"
+    },
+    {
+      "id": "wash",
+      "status": "Live",
+      "icon": "🧹",
+      "title": "Wash",
+      "description": "La Lavadora de Datos — detect and mask PII & PCI data with reversible tokens. Sanitize sensitive text locally before sharing it with AI, then restore the originals.",
+      "tags": ["Privacy", "DLP", "Data Sanitizer", "JavaScript"],
+      "url": "https://oryxen.tech/wash/",
+      "ariaLabel": "Visit Wash — Data Sanitizer"
+    },
+    {
+      "id": "pilot",
+      "status": "Live",
+      "icon": "✈️",
+      "iconImg": "https://oryxen.tech/pilot/favicon.ico",
+      "title": "Pilot",
+      "description": "MergePilot — streamline your Git merge and review workflow. Navigate branches, resolve conflicts, and land changes with confidence.",
+      "tags": ["Git", "Developer Tools", "Workflow", "JavaScript"],
+      "url": "https://oryxen.tech/pilot/",
+      "ariaLabel": "Visit Pilot — Git Merge Tool"
+    },
+    {
+      "id": "flowlyne",
+      "status": "Live",
+      "icon": "🎮",
+      "iconImg": "https://oryxen.tech/Flowlyne/favicon.ico",
+      "title": "Flowlyne",
+      "description": "A fun, all-ages game playable in the browser. Jump in solo or with friends — no installs, no accounts, just play.",
+      "tags": ["Game", "All Ages", "Interactive", "JavaScript"],
+      "url": "https://oryxen.tech/Flowlyne/",
+      "ariaLabel": "Visit Flowlyne — All-Ages Browser Game"
+    },
+    {
+      "id": "pulse",
+      "status": "Live",
+      "icon": "🎵",
+      "iconImg": "https://oryxen.tech/pulse/favicon.ico",
+      "title": "Pulse",
+      "description": "A clean, offline-ready music player for the web. Queue your tracks, control playback, and enjoy your music without distractions.",
+      "tags": ["Music", "Player", "PWA", "JavaScript"],
+      "url": "https://oryxen.tech/pulse",
+      "ariaLabel": "Visit Pulse — Music Player"
+    },
+    {
+      "id": "bot",
+      "status": "Live",
+      "icon": "🤖",
+      "title": "Bot",
+      "description": "ServiceNow bookmarklet builder. Unlock, copy, and install intelligent browser bots that supercharge your ServiceNow workflows.",
+      "tags": ["ServiceNow", "Automation", "Bookmarklet", "JavaScript"],
+      "url": "https://oryxen.tech/bot/",
+      "ariaLabel": "Visit Bot — ServiceNow Bot Builder"
+    },
+    {
+      "id": "lenaland",
+      "status": "Live",
+      "icon": "🌈",
+      "iconImg": "https://oryxen.tech/lenaland/favicon.ico",
+      "title": "LénaLand",
+      "description": "An enchanted world where kids explore, discover and play. A full creative universe built around Léna's adventures.",
+      "tags": ["Kids", "Interactive", "JavaScript", "PWA"],
+      "url": "https://oryxen.tech/lenaland",
+      "ariaLabel": "Visit LénaLand — Kids Interactive World"
+    }
+  ]
+}

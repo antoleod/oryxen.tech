@@ -1,0 +1,126 @@
+# ============================================================
+# ORYXEN LABS — .gitignore
+# ============================================================
+
+# ── Environment & Secrets ──
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+credentials.json
+config.local.json
+auth.json
+
+# ── Admin Sensitive Data ──
+admin/config.local.js
+admin/.password
+admin/secrets.js
+data/*.backup.json
+data/*.local.json
+
+# ── Dependencies ──
+node_modules/
+bower_components/
+vendor/
+jspm_packages/
+
+# ── Build Output ──
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.turbo/
+
+# ── Logs ──
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── OS Files ──
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE ──
+.vscode/
+!.vscode/settings.json.example
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ── Claude Code / AI Tools ──
+.claude/
+.cursor/
+.aider*
+CLAUDE.local.md
+
+# ── Testing & Coverage ──
+coverage/
+.nyc_output/
+*.lcov
+.jest-cache/
+
+# ── Temporary Files ──
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+~$*
+.tmp/
+tmp/
+
+# ── Lock Files (opcional - descomenta si no los quieres) ──
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ── Local development ──
+*.local
+.local/
+local.config.js
+
+# ── Sensitive User Data ──
+data/users.json
+data/private.json
+data/admin-history.json
+
+# ── Analytics & Tracking (si tienes credenciales) ──
+.ga-credentials
+.gsc-credentials
+analytics-config.json
+
+# ── Deploy & CI ──
+.vercel
+.netlify
+.firebase
+.serverless/
+
+# ── Misc ──
+*.zip
+*.tar.gz
+*.rar
+.history/

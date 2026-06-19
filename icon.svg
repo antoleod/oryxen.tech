@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Oryxen Labs">
+  <title>Oryxen Labs</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.85)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,1)"/>
+    </linearGradient>
+  </defs>
+  <!-- Background: rounded square -->
+  <rect width="100" height="100" rx="22" fill="url(#bg)"/>
+  <!-- O ring -->
+  <circle cx="50" cy="50" r="26" fill="none" stroke="url(#mark)" stroke-width="8.5"/>
+  <!-- Forward slash "/" — the brand signature -->
+  <line x1="40" y1="64" x2="60" y2="36" stroke="url(#mark)" stroke-width="6.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 48" role="img" aria-label="Oryxen Labs">
+  <title>Oryxen Labs</title>
+  <defs>
+    <linearGradient id="lbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+    <linearGradient id="ltxt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <!-- Icon mark -->
+  <rect x="0" y="0" width="48" height="48" rx="11" fill="url(#lbg)"/>
+  <circle cx="24" cy="24" r="12.5" fill="none" stroke="rgba(255,255,255,0.95)" stroke-width="4.2"/>
+  <line x1="18.5" y1="30.5" x2="29.5" y2="17.5" stroke="rgba(255,255,255,0.92)" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- Wordmark -->
+  <text x="62" y="29" font-family="'JetBrains Mono','Courier New',monospace" font-size="18" font-weight="700" letter-spacing="2" fill="url(#ltxt)">ORYXEN</text>
+  <text x="64" y="42" font-family="'JetBrains Mono','Courier New',monospace" font-size="10" font-weight="400" letter-spacing="0.5" fill="rgba(139,92,246,0.5)">/ Labs</text>
+</svg>

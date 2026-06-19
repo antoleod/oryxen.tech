@@ -1,0 +1,53 @@
+{
+  "name": "Oryxen Labs",
+  "short_name": "Oryxen",
+  "description": "Belgium-based developer studio building mobile apps, automation tools & open-source software.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#06060b",
+  "theme_color": "#8b5cf6",
+  "lang": "en",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Oryxen Labs — Mobile Apps & Developer Studio"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Products",
+      "url": "/#products",
+      "description": "View our portfolio of apps and tools"
+    },
+    {
+      "name": "Contact",
+      "url": "/#contact",
+      "description": "Get in touch with Oryxen Labs"
+    }
+  ]
+}

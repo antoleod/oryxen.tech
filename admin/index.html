@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oryxen Labs — Admin Panel</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src https://api.github.com; style-src 'unsafe-inline'; img-src 'self' data:;">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0f;
+      color: #f2f2f8;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      margin-bottom: 1.5rem;
+      color: #8b5cf6;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+
+    #login-screen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #06060b 0%, #0d0d14 100%);
+    }
+
+    .login-box {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 3rem;
+      width: 100%;
+      max-width: 400px;
+      backdrop-filter: blur(10px);
+    }
+
+    .login-box h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    input[type="password"],
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      color: #f2f2f8;
+      font-family: inherit;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: #8b5cf6;
+      background: rgba(139, 92, 246, 0.1);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background: #8b5cf6;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+      width: 100%;
+    }
+
+    button:hover {
+      background: #a78bfa;
+    }
+
+    button.secondary {
+      background: rgba(255,255,255,0.1);
+      margin-top: 0.5rem;
+    }
+
+    button.secondary:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    button.danger {
+      background: #ef4444;
+    }
+
+    button.danger:hover {
+      background: #dc2626;
+    }
+
+    #admin-panel {
+      display: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 2rem;
+    }
+
+    header button {
+      width: auto;
+      background: rgba(255,255,255,0.1);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .tab {
+      padding: 1rem 1.5rem;
+      background: none;
+      border: none;
+      color: #f2f2f8;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s;
+      font-weight: 600;
+      width: auto;
+    }
+
+    .tab.active {
+      color: #8b5cf6;
+      border-bottom-color: #8b5cf6;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .card-actions button {
+      flex: 1;
+      padding: 0.5rem;
+      font-size: 0.85rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-grid.full {
+      grid-template-columns: 1fr;
+    }
+
+    .status-msg {
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: none;
+    }
+
+    .status-msg.show {
+      display: block;
+    }
+
+    .status-msg.success {
+      background: rgba(52, 211, 153, 0.1);
+      color: #34d399;
+      border: 1px solid rgba(52, 211, 153, 0.3);
+    }
+
+    .status-msg.error {
+      background: rgba(239, 68, 68, 0.1);
+      color: #ef4444;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+
+    .tags-input {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      min-height: 40px;
+    }
+
+    .tag {
+      background: #8b5cf6;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tag button {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      padding: 0;
+      width: auto;
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    .tag-input-wrapper {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .tag-input-wrapper input {
+      flex: 1;
+    }
+
+    .tag-input-wrapper button {
+      width: auto;
+      padding: 0.5rem 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .tabs {
+        flex-wrap: wrap;
+      }
+      .tab {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="login-screen">
+    <div class="login-box">
+      <h1><span aria-hidden="true">🔐</span> Admin Panel</h1>
+      <p id="login-hint" style="font-size:0.85rem;color:rgba(242,242,248,0.55);margin-bottom:1.25rem;"></p>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter admin password" required autocomplete="current-password">
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="admin-panel">
+    <div class="container">
+      <header>
+        <h1><span aria-hidden="true">🚀</span> Oryxen Labs Admin</h1>
+        <button onclick="logoutAdmin()">Logout</button>
+      </header>
+
+      <div class="status-msg" id="status-msg"></div>
+
+      <div class="tabs">
+        <button class="tab active" onclick="switchTab('products', event)">Products</button>
+        <button class="tab" onclick="switchTab('repos', event)">Repositories</button>
+        <button class="tab" onclick="switchTab('tools', event)">Tools</button>
+        <button class="tab" onclick="switchTab('settings', event)"><span aria-hidden="true">⚙️</span> Settings</button>
+      </div>
+
+      <div id="products" class="tab-content active">
+        <button onclick="toggleForm('add-product')" style="width: auto; margin-bottom: 1rem;">+ Add Product</button>
+        <div id="add-product-form" style="display: none; margin-bottom: 2rem;">
+          <div class="card">
+            <h3>Add New Product</h3>
+            <div class="form-grid">
+              <input type="text" id="prod-title" placeholder="Product Title">
+              <select id="prod-status">
+                <option>Live</option>
+                <option>Coming Soon</option>
+              </select>
+            </div>
+            <div class="form-grid">
+              <input type="text" id="prod-icon" placeholder="Icon (emoji)">
+              <input type="text" id="prod-id" placeholder="ID (slug)">
+            </div>
+            <textarea id="prod-desc" placeholder="Description"></textarea>
+            <div class="tag-input-wrapper" style="margin-top: 1rem; margin-bottom: 1rem;">
+              <input type="text" id="prod-tag-input" placeholder="Add tags">
+              <button type="button" onclick="addTag('product')" style="width: auto;">Add Tag</button>
+            </div>
+            <div class="tags-input" id="prod-tags-list"></div>
+            <div class="form-grid" style="margin-top: 1rem;">
+              <input type="text" id="prod-url" placeholder="URL (optional)">
+              <input type="text" id="prod-label" placeholder="Link Label">
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+              <button onclick="saveProduct()">Save Product</button>
+              <button class="secondary" onclick="toggleForm('add-product')">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <div id="products-list"></div>
+      </div>
+
+      <div id="repos" class="tab-content">
+        <button onclick="toggleForm('add-repo')" style="width: auto; margin-bottom: 1rem;">+ Add Repository</button>
+        <div id="add-repo-form" style="display: none; margin-bottom: 2rem;">
+          <div class="card">
+            <h3>Add New Repository</h3>
+            <div class="form-grid">
+              <input type="text" id="repo-name" placeholder="Repository Name">
+              <input type="text" id="repo-id" placeholder="ID (slug)">
+            </div>
+            <textarea id="repo-desc" placeholder="Description"></textarea>
+            <div class="form-grid">
+              <input type="text" id="repo-language" placeholder="Language">
+              <select id="repo-icon">
+                <option value="file">File</option>
+                <option value="lock">Lock</option>
+                <option value="heart">Heart</option>
+                <option value="play">Play</option>
+              </select>
+            </div>
+            <input type="text" id="repo-url" placeholder="Repository URL" style="margin-bottom: 1rem;">
+            <div style="display: flex; gap: 0.5rem;">
+              <button onclick="saveRepository()">Save Repository</button>
+              <button class="secondary" onclick="toggleForm('add-repo')">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <div id="repos-list"></div>
+      </div>
+
+      <div id="tools" class="tab-content">
+        <div class="card">
+          <h3><span aria-hidden="true">🚀</span> Sync to GitHub</h3>
+          <p style="margin-bottom: 1rem; color: rgba(242,242,248,0.65);">Commit and push your changes directly to the repository. Configure GitHub token in Settings first.</p>
+          <button onclick="syncToGithub()" id="sync-btn">Push to GitHub</button>
+          <p style="font-size: 0.85rem; margin-top: 0.75rem; color: rgba(242,242,248,0.5);" id="sync-status"></p>
+        </div>
+        <div class="card">
+          <h3>📥 Import Data</h3>
+          <p style="margin-bottom: 1rem; color: rgba(242,242,248,0.65);">Upload JSON to import data.</p>
+          <input type="file" id="import-file" accept=".json">
+          <button onclick="importData()" style="margin-top: 1rem;">Import</button>
+        </div>
+        <div class="card">
+          <h3>📤 Export Data</h3>
+          <p style="margin-bottom: 1rem; color: rgba(242,242,248,0.65);">Download your data as JSON.</p>
+          <button onclick="exportData()">Export All Data</button>
+        </div>
+        <div class="card">
+          <h3>🔄 Reload</h3>
+          <p style="margin-bottom: 1rem; color: rgba(242,242,248,0.65);">Reload data from server (discards local changes).</p>
+          <button onclick="reloadData()">Reload Data</button>
+        </div>
+      </div>
+
+      <div id="settings" class="tab-content">
+        <div class="card">
+          <h3>🔑 Change Password</h3>
+          <p style="margin-bottom: 1rem; color: rgba(242,242,248,0.65);">Update your admin password. Stored locally in your browser.</p>
+          <div class="form-group">
+            <label for="current-password">Current Password</label>
+            <input type="password" id="current-password" placeholder="Enter current password">
+          </div>
+          <div class="form-group">
+            <label for="new-password">New Password</label>
+            <input type="password" id="new-password" placeholder="Enter new password (min 12 chars)">
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm New Password</label>
+            <input type="password" id="confirm-password" placeholder="Re-enter new password">
+          </div>
+          <button onclick="changePassword()">Update Password</button>
+        </div>
+
+        <div class="card">
+          <h3>🐙 GitHub Sync Configuration</h3>
+          <p style="margin-bottom: 1rem; color: rgba(242,242,248,0.65);">
+            Configure GitHub to enable direct sync. Requires a Personal Access Token with <code style="background:rgba(139,92,246,.15);padding:.15rem .4rem;border-radius:4px;">Contents: Read/Write</code> permission.
+            <br><a href="https://github.com/settings/tokens?type=beta" target="_blank" style="color:#8b5cf6;text-decoration:underline;">→ Create Token (fine-grained)</a>
+          </p>
+          <div class="form-group">
+            <label for="gh-owner">Repository Owner</label>
+            <input type="text" id="gh-owner" placeholder="e.g., oryxen">
+          </div>
+          <div class="form-group">
+            <label for="gh-repo">Repository Name</label>
+            <input type="text" id="gh-repo" placeholder="e.g., oryxen.github.io">
+          </div>
+          <div class="form-group">
+            <label for="gh-branch">Branch</label>
+            <input type="text" id="gh-branch" placeholder="main" value="main">
+          </div>
+          <div class="form-group">
+            <label for="gh-token">Personal Access Token</label>
+            <input type="password" id="gh-token" placeholder="github_pat_...">
+            <p style="font-size: 0.75rem; margin-top: 0.5rem; color: rgba(242,242,248,0.5);">⚠️ Stored in localStorage. Don't use shared computers.</p>
+          </div>
+          <div style="display: flex; gap: 0.5rem;">
+            <button onclick="saveGithubConfig()">Save Configuration</button>
+            <button class="secondary" onclick="testGithubConnection()">Test Connection</button>
+          </div>
+          <p style="font-size: 0.85rem; margin-top: 0.75rem;" id="gh-test-status"></p>
+        </div>
+
+        <div class="card">
+          <h3>🗑️ Danger Zone</h3>
+          <p style="margin-bottom: 1rem; color: rgba(242,242,248,0.65);">Reset all local data. Cannot be undone.</p>
+          <button class="danger" onclick="resetAllData()">Clear All Local Data</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>

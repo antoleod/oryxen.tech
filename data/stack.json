@@ -1,0 +1,49 @@
+{
+  "categories": [
+    {
+      "label": "Frontend",
+      "items": [
+        { "emoji": "⚛️", "text": "React / Next.js" },
+        { "emoji": "🌐", "text": "HTML5 & CSS3" },
+        { "emoji": "🟨", "text": "JavaScript (ES2023)" },
+        { "emoji": "🔷", "text": "TypeScript" }
+      ]
+    },
+    {
+      "label": "Mobile",
+      "items": [
+        { "emoji": "🤖", "text": "Android (Kotlin)" },
+        { "emoji": "📱", "text": "Progressive Web Apps" },
+        { "emoji": "🩵", "text": "Flutter" },
+        { "emoji": "🎨", "text": "Responsive UI / CSS" }
+      ]
+    },
+    {
+      "label": "Backend & Data",
+      "items": [
+        { "emoji": "🟢", "text": "Node.js" },
+        { "emoji": "🐍", "text": "Python" },
+        { "emoji": "🔥", "text": "Firebase" },
+        { "emoji": "🐘", "text": "PostgreSQL" }
+      ]
+    },
+    {
+      "label": "DevOps & Cloud",
+      "items": [
+        { "emoji": "☁️", "text": "Microsoft Azure" },
+        { "emoji": "▲", "text": "Vercel" },
+        { "emoji": "🐙", "text": "GitHub Actions" },
+        { "emoji": "🐋", "text": "Docker" }
+      ]
+    },
+    {
+      "label": "Tooling",
+      "items": [
+        { "emoji": "💻", "text": "VS Code" },
+        { "emoji": "🖌️", "text": "Figma" },
+        { "emoji": "🧪", "text": "Playwright / Vitest" },
+        { "emoji": "✅", "text": "ESLint / Prettier" }
+      ]
+    }
+  ]
+}
