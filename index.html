@@ -239,7 +239,14 @@
       ]
     }
   </script>
-</head>
+<style>
+/* Oryxen 2026 visual refinement */
+body{background-color:#080d12}::selection{background:#aaf0cf;color:#081510}
+a,button{transition:transform .2s ease,opacity .2s ease}a:focus-visible,button:focus-visible{outline:3px solid #aaf0cf;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.oryxen-feature{position:relative;isolation:isolate;overflow:hidden;margin:42px auto 80px;padding:clamp(30px,6vw,78px);max-width:1160px;border:1px solid rgba(169,240,207,.32);border-radius:24px;background:radial-gradient(ellipse at 95% 10%,rgba(115,255,186,.16),transparent 55%),linear-gradient(135deg,#101f23,#0b1119);color:#f3f9f6;box-shadow:0 35px 100px rgba(0,0,0,.25)}
+.oryxen-feature .kicker{font:700 12px ui-monospace,monospace;letter-spacing:.17em;color:#aaf0cf;text-transform:uppercase}.oryxen-feature h2{max-width:800px;font-size:clamp(2.2rem,5.5vw,5rem);line-height:1.06;letter-spacing:-.055em;margin:22px 0}.oryxen-feature p{max-width:650px;color:#c2d4d2;font-size:clamp(1rem,2vw,1.2rem);line-height:1.7}.oryxen-feature a{display:inline-flex;align-items:center;gap:12px;padding:14px 21px;margin-top:18px;background:#b0f1d2;color:#0b1d16;font-weight:800;border-radius:5px;text-decoration:none}.oryxen-feature a:hover{transform:translateY(-3px)}.oryxen-feature .signals{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}.oryxen-feature .signals span{border:1px solid #35544c;border-radius:50px;padding:7px 13px;font-size:12px;color:#d2e9e0}
+</style></head>
 
 
 <body>
@@ -453,7 +460,7 @@
   <!-- ======================================================
        MAIN
   ====================================================== -->
-  <main id="main" tabindex="-1">
+  <main id="main" tabindex="-1"><section class="oryxen-feature" aria-labelledby="oryxen-ai-title"><span class="kicker">Oryxen Labs / Applied Intelligence</span><h2 id="oryxen-ai-title">Systems that think.<br>Tools that deliver.</h2><p>From controlled AI agents to real-world automation, we engineer practical systems that connect data, decisions and action—with human oversight built in.</p><a href="ai-and-systems/">Explore AI &amp; Systems <span aria-hidden="true">↗</span></a><div class="signals"><span>AI agents</span><span>Automation</span><span>Systems engineering</span><span>Human control</span></div></section>
 
     <!-- ── HERO ── -->
     <section class="hero section" id="hero">
