@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>PulseOne</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <meta name="theme-color" content="#070713">
+<meta name="description" content="Your intelligent music companion">
+<link rel="icon" href="/pulse/favicon.ico" />
+    <!-- PWA / iOS home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PulseOne" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="/pulse/icons/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/pulse/icons/icon-192.png" />
+    <link rel="manifest" href="/pulse/manifest.json" />
+  </head>
+
+  <body>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+  <script src="/pulse/_expo/static/js/web/__expo-metro-runtime-1f8f5d3ca6b7f58204d51e14506d73fb.js" defer></script><script src="/pulse/_expo/static/js/web/__common-5e2f138467af88888d0402679a66a1f0.js" defer></script><script src="/pulse/_expo/static/js/web/index-32780e2b208ca333f94cf2eaa93a6d54.js" defer></script>
+
+  <script>
+    // Restore route from 404.html redirect
+    (function() {
+      var redirect = sessionStorage.getItem('spa_redirect');
+      if (redirect) {
+        sessionStorage.removeItem('spa_redirect');
+        window.history.replaceState(null, '', '' + redirect);
+      }
+    })();
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/pulse/sw.js', { scope: '/pulse/' }).catch(() => {});
+    }
+  </script>
+</body>
+</html>

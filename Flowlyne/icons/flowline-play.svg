@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flowline play">
+  <defs>
+    <linearGradient id="p" x1="12" x2="56" y1="8" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3DF5A0"/>
+      <stop offset=".5" stop-color="#4DD2FF"/>
+      <stop offset="1" stop-color="#7C5CFF"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="28" fill="url(#p)"/>
+  <path fill="#06101F" fill-opacity=".32" d="M27 19v26l21-13-21-13Z"/>
+  <path fill="#fff" d="M24 18.8v26.4a3 3 0 0 0 4.6 2.5l21-13.2a3 3 0 0 0 0-5l-21-13.2a3 3 0 0 0-4.6 2.5Z"/>
+</svg>

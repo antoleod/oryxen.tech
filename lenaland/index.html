@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>LénaLand</title>
+    <meta name="description" content="Plateforme educative modulaire pour le primaire." />
+    <meta name="theme-color" content="#ff8fc6" />
+    <meta name="application-name" content="LénaLand" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="LénaLand" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+
+    <link rel="icon" href="/lenaland/favicon.ico" sizes="any" />
+    <link rel="icon" href="/lenaland/lenaland_app_icon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/lenaland/assets/iconos/icon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/lenaland/assets/iconos/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/lenaland/assets/iconos/icon-180.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700;900&family=Nunito:wght@600;800&display=swap" rel="stylesheet" />
+    <script>
+      (function normalizeSpaRedirect() {
+        var redirect = window.location.search;
+        if (!redirect || redirect.indexOf('/?') !== -1 || redirect.indexOf('?/') === -1) return;
+
+        var decoded = redirect
+          .slice(1)
+          .replace(/^\/?\?\/?/, '/')
+          .replace(/~and~/g, '&');
+
+        var target = window.location.pathname.replace(/\/$/, '') + decoded + window.location.hash;
+        window.history.replaceState(null, '', target);
+      })();
+    </script>
+    <script type="module" crossorigin src="/lenaland/assets/index-6LxDPmv8.js"></script>
+    <link rel="stylesheet" crossorigin href="/lenaland/assets/index-CR5wUkPK.css">
+  <link rel="manifest" href="/lenaland/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

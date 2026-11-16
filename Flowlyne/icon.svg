@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Flowlyne">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="48%" r="64%">
+      <stop offset="0" stop-color="#18234a"/>
+      <stop offset="0.58" stop-color="#0d1328"/>
+      <stop offset="1" stop-color="#050812"/>
+    </radialGradient>
+    <linearGradient id="coolFlow" x1="120" y1="160" x2="392" y2="334" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4bd8ff"/>
+      <stop offset="0.36" stop-color="#1f9dff"/>
+      <stop offset="0.72" stop-color="#7f5cff"/>
+      <stop offset="1" stop-color="#b15cff"/>
+    </linearGradient>
+    <linearGradient id="warmFlow" x1="120" y1="334" x2="392" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd052"/>
+      <stop offset="0.34" stop-color="#ff9d42"/>
+      <stop offset="0.66" stop-color="#ff4aa5"/>
+      <stop offset="1" stop-color="#ff4aa5"/>
+    </linearGradient>
+    <filter id="outerGlow" x="-55%" y="-70%" width="210%" height="240%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="nodeGlow" x="-90%" y="-90%" width="280%" height="280%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#bgGlow)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.72" filter="url(#outerGlow)">
+    <path d="M124 168 C 214 168 210 338 288 338 C 352 338 350 236 388 252" stroke="url(#coolFlow)" stroke-width="54"/>
+    <path d="M124 300 C 214 300 210 174 288 174 C 352 174 350 278 388 262" stroke="url(#warmFlow)" stroke-width="54"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M124 168 C 214 168 210 338 288 338 C 352 338 350 236 388 252" stroke="url(#coolFlow)" stroke-width="36"/>
+    <path d="M124 300 C 214 300 210 174 288 174 C 352 174 350 278 388 262" stroke="url(#warmFlow)" stroke-width="36"/>
+  </g>
+  <path d="M134 170 C 174 172 192 210 205 250" fill="none" stroke="#e5fbff" stroke-width="9" stroke-linecap="round" opacity="0.82"/>
+  <g filter="url(#nodeGlow)" opacity="0.95">
+    <circle cx="124" cy="168" r="29" fill="#4bd8ff"/>
+    <circle cx="124" cy="300" r="29" fill="#ffd052"/>
+    <circle cx="388" cy="174" r="29" fill="#ff4aa5"/>
+    <circle cx="388" cy="262" r="29" fill="#805cff"/>
+  </g>
+  <circle cx="124" cy="168" r="25" fill="#4bd8ff"/>
+  <circle cx="124" cy="300" r="25" fill="#ffd052"/>
+  <circle cx="388" cy="174" r="25" fill="#ff4aa5"/>
+  <circle cx="388" cy="262" r="25" fill="#805cff"/>
+</svg>

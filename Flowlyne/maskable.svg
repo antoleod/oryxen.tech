@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Flowlyne">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="48%" r="68%">
+      <stop offset="0" stop-color="#18234a"/>
+      <stop offset="0.6" stop-color="#0d1328"/>
+      <stop offset="1" stop-color="#050812"/>
+    </radialGradient>
+    <linearGradient id="coolFlow" x1="150" y1="188" x2="362" y2="318" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4bd8ff"/>
+      <stop offset="0.4" stop-color="#1f9dff"/>
+      <stop offset="1" stop-color="#805cff"/>
+    </linearGradient>
+    <linearGradient id="warmFlow" x1="150" y1="318" x2="362" y2="188" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd052"/>
+      <stop offset="0.42" stop-color="#ff9d42"/>
+      <stop offset="1" stop-color="#ff4aa5"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-75%" width="220%" height="250%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="url(#bgGlow)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.75" filter="url(#glow)">
+    <path d="M156 202 C 222 202 222 318 286 318 C 338 318 336 244 362 256" stroke="url(#coolFlow)" stroke-width="54"/>
+    <path d="M156 310 C 222 310 222 198 286 198 C 338 198 336 278 362 266" stroke="url(#warmFlow)" stroke-width="54"/>
+  </g>
+  <path d="M156 202 C 222 202 222 318 286 318 C 338 318 336 244 362 256" fill="none" stroke="url(#coolFlow)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M156 310 C 222 310 222 198 286 198 C 338 198 336 278 362 266" fill="none" stroke="url(#warmFlow)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="156" cy="202" r="28" fill="#4bd8ff"/>
+  <circle cx="156" cy="310" r="28" fill="#ffd052"/>
+  <circle cx="362" cy="198" r="28" fill="#ff4aa5"/>
+  <circle cx="362" cy="266" r="28" fill="#805cff"/>
+</svg>

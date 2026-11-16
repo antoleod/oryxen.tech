@@ -1,0 +1,118 @@
+const n=[{id:"la-regle",title:"La règle 📏",subtitle:"Apprends à mesurer comme un grand !",subject:"mathematics",grade:["P2","P3"],lang:"fr",color:"#f59e0b",shadow:"#b45309",bg:"linear-gradient(145deg,#fde68a,#f59e0b)",emoji:"📏",duration:"5 min",slides:[{id:"s1",type:"info",emoji:"📏",title:"La règle, c'est quoi ?",body:`La règle, c'est un long bâton plat.
+Elle est **droite** et elle a des **chiffres** dessus.
+Tu la vois dans ta trousse ! 😊`,tip:"Regarde ta règle. Tu vois des petits traits partout ?"},{id:"s2",type:"info",emoji:"🧩",title:"À quoi ça sert ?",body:`La règle sert à **deux choses** :
+
+1️⃣ **Mesurer** — savoir combien une chose est longue.
+2️⃣ **Tracer** — dessiner une ligne bien droite. ✏️`,tip:"Comme un super outil magique !"},{id:"s3",type:"info",emoji:"📐",title:"Les centimètres (cm)",body:`Sur ta règle, tu vois des **grands chiffres** : 1, 2, 3, 4…
+
+Entre deux grands chiffres, il y a **1 centimètre**.
+
+On écrit **cm** pour centimètre.`,tip:"Exemple : ton pouce mesure environ 1 cm ! 👍"},{id:"s4",type:"question",emoji:"🤔",title:"Petite question !",question:"Comment écrit-on centimètre en abrégé ?",choices:["cm","mm","km","dm"],correct:0,feedback:{correct:"Bravo ! 🎉 cm = centimètre. Super !",wrong:"Presque ! C'est **cm** pour centimètre. mm c'est pour millimètre — on va voir ça juste après !"}},{id:"s5",type:"info",emoji:"🔍",title:"Les millimètres (mm)",body:`Entre les grands chiffres, tu vois des **tout petits traits**.
+
+Chaque petit trait = **1 millimètre** (mm).
+
+Les millimètres sont **très petits** — plus petits qu'un grain de riz ! 🍚`,tip:"Compte les petits traits entre 0 et 1 cm… tu en trouves 10 !"},{id:"s6",type:"info",emoji:"⚡",title:"1 cm = 10 mm",body:`C'est la règle la plus importante !
+
+**1 centimètre = 10 millimètres**
+
+Comme 1 euro = 10 pièces de 10 centimes. 🪙`,tip:"Essaie de compter les petits traits sur ta règle !",highlight:!0},{id:"s7",type:"question",emoji:"🧠",title:"À toi de jouer !",question:"Combien y a-t-il de millimètres dans 1 cm ?",choices:["5","10","100","2"],correct:1,feedback:{correct:"Excellent ! 🌟 1 cm = 10 mm. Tu es fort(e) !",wrong:"Ce n'est pas ça… La bonne réponse c'est **10** ! 1 cm = 10 mm. Retiens bien ça !"}},{id:"s8",type:"info",emoji:"👆",title:"Comment placer la règle ?",body:`1. Pose ta règle sur la feuille.
+2. Mets le **0** au début de ce que tu veux mesurer.
+3. La règle doit être **bien droite** — ne la bouge pas ! ✋`,tip:"Le 0 est tout au bout de la règle. C'est le point de départ !"},{id:"s9",type:"activity",emoji:"📏",title:"Comment mesurer une ligne ?",body:`1. Place le **0** de ta règle au début de la ligne.
+2. Regarde où la ligne se termine.
+3. Lis le chiffre. C'est la **longueur** ! 🎯`,activityPrompt:"Essaie chez toi : prends ta règle et mesure ton crayon. Combien fait-il ?",activityPlaceholder:"Ex : mon crayon fait 15 cm"},{id:"s10",type:"info",emoji:"✏️",title:"Comment tracer une ligne droite ?",body:`1. Pose ta règle sur la feuille.
+2. Tiens-la bien avec une main.
+3. Pose ton crayon contre le bord de la règle.
+4. Glisse doucement le crayon le long de la règle. 🐛`,tip:"Ne lève pas ton crayon ! Trace en une seule fois."},{id:"s11",type:"question",emoji:"🏁",title:"Dernière question !",question:"Pour mesurer une ligne, où dois-tu mettre le 0 de ta règle ?",choices:["Au milieu de la ligne","Au début de la ligne","À la fin de la ligne","N'importe où"],correct:1,feedback:{correct:"Parfait ! 🎊 Le 0 se place toujours au **début** de la ligne. Très bien !",wrong:"Presque ! Il faut mettre le **0 au début** de la ligne. C'est comme ça qu'on mesure correctement !"}},{id:"s12",type:"info",emoji:"🏆",title:"Bravo, tu es un champion !",body:`Tu sais maintenant :
+✅ Ce qu'est une règle
+✅ Mesurer en **cm** et **mm**
+✅ Que 1 cm = 10 mm
+✅ Comment placer la règle
+✅ Comment mesurer et tracer
+
+**Tu peux utiliser ta règle tout seul !** 🌟`,tip:"Pratique avec ton crayon, un livre, ta trousse…",isEnd:!0}]},{id:"les-tables-de-2",title:"La table de 2 ✌️",subtitle:"Compte par 2 comme un champion !",subject:"mathematics",grade:["P2","P3"],lang:"fr",color:"#10b981",shadow:"#047857",bg:"linear-gradient(145deg,#6ee7b7,#10b981)",emoji:"✌️",duration:"5 min",slides:[{id:"s1",type:"info",emoji:"✌️",title:"Multiplier par 2, c'est quoi ?",body:`Multiplier par 2, c'est **doubler** !
+
+2 chaussures → 1 paire
+4 yeux → 2 paires
+6 ailes → 3 paires
+
+C'est toujours **deux fois** la même chose ! 😊`,tip:"Regarde tes deux mains : 5 + 5 = 10. Tu doubles !"},{id:"s2",type:"info",emoji:"🪜",title:"La table de 2 — partie 1",body:`1 × 2 = **2**
+2 × 2 = **4**
+3 × 2 = **6**
+4 × 2 = **8**
+5 × 2 = **10**
+
+Chaque fois, on ajoute **2** ! 🔢`,tip:"Compte sur tes doigts : 2, 4, 6, 8, 10 !"},{id:"s3",type:"question",emoji:"🤔",title:"À toi !",question:"Que vaut 3 × 2 ?",choices:["4","6","8","5"],correct:1,feedback:{correct:"Bravo ! 🎉 3 × 2 = 6. Tu doubles 3, tu obtiens 6 !",wrong:"Presque ! 3 × 2 = **6**. Compte : 2, 4, 6 — trois sauts de 2 !"}},{id:"s4",type:"info",emoji:"🚀",title:"La table de 2 — partie 2",body:`6 × 2 = **12**
+7 × 2 = **14**
+8 × 2 = **16**
+9 × 2 = **18**
+10 × 2 = **20**
+
+On continue à ajouter **2** ! 💪`,tip:"Astuce : les résultats sont toujours pairs (2, 4, 6…) !"},{id:"s5",type:"question",emoji:"🧠",title:"Encore une !",question:"Que vaut 7 × 2 ?",choices:["12","14","16","18"],correct:1,feedback:{correct:"Super ! 🌟 7 × 2 = 14. Tu connais bien la table !",wrong:"La bonne réponse est **14**. Compte : 2, 4, 6, 8, 10, 12, 14 — sept sauts !"}},{id:"s6",type:"activity",emoji:"✏️",title:"Entraîne-toi !",body:`Écris la table de 2 en entier sur une feuille :
+1×2, 2×2, 3×2… jusqu'à 10×2 !`,activityPrompt:"Combien fait 9 × 2 ? Écris le résultat ici.",activityPlaceholder:"Ex : 9 × 2 = 18",isEnd:!0}]},{id:"les-fractions-intro",title:"Les fractions 🍕",subtitle:"Partager, c'est apprendre !",subject:"mathematics",grade:["P4","P5"],lang:"fr",color:"#f97316",shadow:"#c2410c",bg:"linear-gradient(145deg,#fed7aa,#f97316)",emoji:"🍕",duration:"6 min",slides:[{id:"s1",type:"info",emoji:"🍕",title:"Une fraction, c'est quoi ?",body:`Une fraction, c'est **une partie d'un tout**.
+
+Imagine une pizza coupée en **4 parts**.
+Tu prends **1 part** → tu as **1/4** de la pizza ! 🍕`,tip:"Le tout peut être n'importe quoi : un gâteau, une heure, un segment…"},{id:"s2",type:"info",emoji:"🔢",title:"Numérateur et dénominateur",body:`Dans **3/4** :
+
+⬆️ Le **3** s'appelle le **numérateur** → les parts que tu prends.
+⬇️ Le **4** s'appelle le **dénominateur** → le nombre total de parts.`,tip:"Dé-no-mi-na-teur : le chiffre du BAS = le total.",highlight:!0},{id:"s3",type:"question",emoji:"🤔",title:"Petite question !",question:"Dans 3/4, combien y a-t-il de parts au total ?",choices:["3","4","7","1"],correct:1,feedback:{correct:"Parfait ! 🎉 Le **4** (dénominateur) dit qu'il y a 4 parts en tout.",wrong:"C'est le chiffre du **bas** qui donne le total : **4** parts en tout !"}},{id:"s4",type:"info",emoji:"📊",title:"Les fractions sur une droite",body:`Sur une droite de 0 à 1 :
+
+0 ────── 1/4 ── 2/4 ── 3/4 ────── 1
+
+**1/2** est au milieu.
+**1/4** est plus petit que **1/2**.`,tip:"Plus le dénominateur est grand, plus les parts sont petites !"},{id:"s5",type:"question",emoji:"🧠",title:"Quelle fraction est plus grande ?",question:"Quelle fraction est plus grande : 1/2 ou 1/4 ?",choices:["1/2","1/4"],correct:0,feedback:{correct:"Bravo ! 🌟 1/2 = une moitié. 1/4 = un quart. La moitié est plus grande !",wrong:"Non ! **1/2** est plus grande. Imagine : couper en 2 donne de plus grosses parts qu'en 4 !"}},{id:"s6",type:"info",emoji:"🏆",title:"Résumé des fractions",body:`✅ Une fraction = une partie d'un tout.
+✅ Numérateur (haut) = parts prises.
+✅ Dénominateur (bas) = total de parts.
+✅ Plus le dénominateur est **grand**, plus les parts sont **petites** ! 🔍`,tip:"Essaie de partager une feuille en 2, puis en 4 pour voir la différence !",isEnd:!0,highlight:!0}]},{id:"les-sons-fr",title:"Les sons du français 🔤",subtitle:"Lis mieux, écris mieux !",subject:"french",grade:["P2","P3"],lang:"fr",color:"#8b5cf6",shadow:"#5b21b6",bg:"linear-gradient(145deg,#ddd6fe,#8b5cf6)",emoji:"🔤",duration:"5 min",slides:[{id:"s1",type:"info",emoji:"👄",title:"Le son « ou »",body:`Le son **ou** se prononce comme dans :
+
+🐺 **l**ou**p** · 🌀 r**ou**e · 🦉 h**ou**lette
+
+Les lettres **o** et **u** ensemble font ce son.`,tip:"Arrondis la bouche comme un cercle pour dire « ou » !"},{id:"s2",type:"info",emoji:"👃",title:"Le son « on »",body:`Le son **on** se prononce par le nez :
+
+🍬 b**on**b**on** · 🏠 mais**on** · 👦 garç**on**
+
+Les lettres **o** et **n** ensemble font ce son.`,tip:"Mets ta main sous ton nez : tu sens de l'air quand tu dis « on » ?"},{id:"s3",type:"question",emoji:"🤔",title:"Dans quel mot entends-tu « ou » ?",question:"Dans quel mot entends-tu le son « ou » ?",choices:["maison","loup","chanson","garçon"],correct:1,feedback:{correct:"Super ! 🎉 « l**ou**p » — le **ou** est bien là !",wrong:"La bonne réponse est **loup** ! l-**ou**-p. Les autres ont le son « on »."}},{id:"s4",type:"info",emoji:"💨",title:"Le son « an » / « en »",body:`Le son **an** (ou **en**) se prononce aussi par le nez :
+
+💨 v**en**t · 🦷 d**en**t · 👶 **en**f**an**t
+
+**an** et **en** font le même son !`,tip:"Exemple : « le vent souffle » — v-**en**-t."},{id:"s5",type:"question",emoji:"🧠",title:"Quel son entends-tu ?",question:'« Le v**en**t souffle fort. » Quel son entends-tu dans "vent" ?',choices:["on","an/en","ou","in"],correct:1,feedback:{correct:"Bravo ! 🌟 v-**en**-t → son « an/en ». Tu as l'oreille fine !",wrong:"La bonne réponse est **an/en** ! « vent » se prononce v-**an**-t."}},{id:"s6",type:"activity",emoji:"✏️",title:"Trouve des mots !",body:"Tu connais maintenant les sons **ou**, **on** et **an/en**.",activityPrompt:"Écris 2 mots qui contiennent le son « ou ». Cherche dans ta tête !",activityPlaceholder:"Ex : loup, roue",isEnd:!0}]},{id:"colours-en",title:"Colours in English 🎨",subtitle:"Learn your colours!",subject:"english",grade:["P2","P3"],lang:"fr",color:"#ec4899",shadow:"#9d174d",bg:"linear-gradient(145deg,#fbcfe8,#ec4899)",emoji:"🎨",duration:"4 min",slides:[{id:"s1",type:"info",emoji:"🔴🔵🟡",title:"Les 3 couleurs primaires",body:`🍎 **Red** = rouge
+🌊 **Blue** = bleu
+☀️ **Yellow** = jaune
+
+Ce sont les 3 couleurs de base !`,tip:"Red, Blue, Yellow — dis-les 3 fois à voix haute !"},{id:"s2",type:"info",emoji:"🟢🟠🟣",title:"D'autres couleurs",body:`🐸 **Green** = vert
+🎃 **Orange** = orange
+🍇 **Purple** = violet
+
+Tu les reconnais ?`,tip:"Orange en anglais se dit pareil qu'en français… presque !"},{id:"s3",type:"question",emoji:"🤔",title:"Question time!",question:"What colour is the sky?",choices:["red","blue","green","yellow"],correct:1,feedback:{correct:"Well done! 🎉 The sky is **blue** !",wrong:"The sky is **blue** ! 🌊 It's the colour of water and the sea too."}},{id:"s4",type:"info",emoji:"🩷🤎🖤🤍",title:"More colours!",body:`🦩 **Pink** = rose
+🍫 **Brown** = marron
+🌙 **Black** = noir
+❄️ **White** = blanc`,tip:"Black and white — like an old photo or a zebra!"},{id:"s5",type:"question",emoji:"🧠",title:"What colour is chocolate?",question:"What colour is chocolate?",choices:["white","pink","brown","orange"],correct:2,feedback:{correct:"Yes! 🍫 Chocolate is **brown** !",wrong:"Chocolate is **brown** ! Think of a chocolate bar."}},{id:"s6",type:"activity",emoji:"👀",title:"Look around you!",body:"Tu connais maintenant les couleurs en anglais.",activityPrompt:"Look around you. Find one red thing and one blue thing. Write them in English!",activityPlaceholder:"Ex: a red book, a blue pen",isEnd:!0}]},{id:"school-words-nl",title:"Schoolwoorden 🏫",subtitle:"Leer de woorden van de klas!",subject:"dutch",grade:["P2","P3"],lang:"fr",color:"#0ea5e9",shadow:"#0369a1",bg:"linear-gradient(145deg,#bae6fd,#0ea5e9)",emoji:"🏫",duration:"5 min",slides:[{id:"s1",type:"info",emoji:"📚",title:"Les objets de la classe",body:`📗 **het boek** = le livre
+✏️ **het potlood** = le crayon
+🖊️ **de pen** = le stylo
+🎒 **de tas** = le sac`,tip:"« het » et « de » sont les articles en néerlandais (le/la)."},{id:"s2",type:"info",emoji:"🪑",title:"Le mobilier de la classe",body:`📋 **het bord** = le tableau
+🪑 **de stoel** = la chaise
+🗒️ **de tafel** = la table`,tip:"De stoel — imagine une chaise avec une étoile dessus !"},{id:"s3",type:"question",emoji:"🤔",title:"Petite question !",question:'Comment dit-on "le livre" en néerlandais ?',choices:["de pen","het boek","de tafel","de stoel"],correct:1,feedback:{correct:"Super ! 📗 **het boek** = le livre. Bien joué !",wrong:"La bonne réponse est **het boek** ! Retiens : boek = livre."}},{id:"s4",type:"info",emoji:"👩‍🏫",title:"Les personnes de la classe",body:`👩‍🏫 **de juf** = la maîtresse
+👨‍🏫 **de meester** = le maître
+🎒 **de leerling** = l'élève
+👨‍👩‍👧‍👦 **de klas** = la classe`,tip:"« Goedemorgen juf ! » = « Bonjour maîtresse ! »"},{id:"s5",type:"question",emoji:"🧠",title:"Et ça ?",question:'Comment dit-on "la chaise" en néerlandais ?',choices:["het bord","de stoel","de pen","het boek"],correct:1,feedback:{correct:"Excellent ! 🪑 **de stoel** = la chaise !",wrong:"La bonne réponse est **de stoel** ! Pense à une chaise étoilée."}},{id:"s6",type:"activity",emoji:"👀",title:"Regarde autour de toi !",body:"Tu connais maintenant les mots de la classe en néerlandais.",activityPrompt:"Regarde autour de toi et dis le nom de 3 objets en néerlandais !",activityPlaceholder:"Ex : de tafel, het boek, de pen",isEnd:!0}]},{id:"los-numeros-es",title:"Los números 1-20 🔢",subtitle:"Cuenta en español!",subject:"spanish",grade:["P2","P3"],lang:"fr",color:"#f59e0b",shadow:"#b45309",bg:"linear-gradient(145deg,#fde68a,#f97316)",emoji:"🔢",duration:"5 min",slides:[{id:"s1",type:"info",emoji:"🖐️",title:"Les nombres 1 à 5",body:`1️⃣ **uno** · 2️⃣ **dos** · 3️⃣ **tres**
+4️⃣ **cuatro** · 5️⃣ **cinco**
+
+Compte sur tes doigts : uno, dos, tres, cuatro, cinco !`,tip:"Uno = un, dos = deux, tres = trois !"},{id:"s2",type:"info",emoji:"🖐️🖐️",title:"Les nombres 6 à 10",body:`6️⃣ **seis** · 7️⃣ **siete** · 8️⃣ **ocho**
+9️⃣ **nueve** · 🔟 **diez**
+
+Diez = dix — les deux mains !`,tip:"seis, siete, ocho, nueve, diez !"},{id:"s3",type:"question",emoji:"🤔",title:"¿Cuánto es?",question:'Comment dit-on "7" en espagnol ?',choices:["seis","siete","ocho","nueve"],correct:1,feedback:{correct:"¡Muy bien! 🎉 7 = **siete** !",wrong:"La bonne réponse est **siete** ! 6=seis, 7=siete, 8=ocho."}},{id:"s4",type:"info",emoji:"🔟➕",title:"Les nombres 11 à 20",body:`11 **once** · 12 **doce** · 13 **trece**
+14 **catorce** · 15 **quince**
+16 **dieciséis** · 17 **diecisiete**
+18 **dieciocho** · 19 **diecinueve** · 20 **veinte**`,tip:"Dici- = diez (10) + ... : dieciséis = 10+6 !"},{id:"s5",type:"question",emoji:"🧠",title:"¿Y este número?",question:'Comment dit-on "15" en espagnol ?',choices:["catorce","quince","dieciséis","trece"],correct:1,feedback:{correct:"¡Excelente! 🌟 15 = **quince** !",wrong:"La bonne réponse est **quince** ! 14=catorce, 15=quince, 16=dieciséis."}},{id:"s6",type:"activity",emoji:"🗣️",title:"Cuenta !",body:"Tu sais compter de 1 à 20 en espagnol !",activityPrompt:"Compte jusqu'à 10 en espagnol à voix haute. Combien de nombres tu te souviens ?",activityPlaceholder:"Ex : j'ai dit uno, dos, tres… jusqu'à diez !",isEnd:!0}]},{id:"la-geometrie-intro",title:"Les formes géométriques 🔵",subtitle:"Reconnais les figures autour de toi !",subject:"mathematics",grade:["P3","P4"],lang:"fr",color:"#6366f1",shadow:"#3730a3",bg:"linear-gradient(145deg,#c7d2fe,#6366f1)",emoji:"🔵",duration:"5 min",slides:[{id:"s1",type:"info",emoji:"🔷",title:"Les formes à côtés droits",body:`🟦 **Le carré** → 4 côtés **égaux**
+📄 **Le rectangle** → 2 paires de côtés égaux
+🔺 **Le triangle** → 3 côtés
+
+Compte les côtés pour reconnaître la forme !`,tip:"Une fenêtre = rectangle, une pizza = triangle, un stop = octogone !"},{id:"s2",type:"info",emoji:"⚪",title:"Le cercle et le losange",body:`⚪ **Le cercle** → aucun côté, tout rond !
+♦️ **Le losange** → 4 côtés égaux, mais penché
+
+Le cercle est parfait : chaque point est à la même distance du centre. 🎯`,tip:"La roue d'un vélo, la lune, une assiette… ce sont des cercles !"},{id:"s3",type:"question",emoji:"🤔",title:"Combien de côtés ?",question:"Combien de côtés a un triangle ?",choices:["2","3","4","6"],correct:1,feedback:{correct:"Parfait ! 🎉 Le triangle a **3** côtés — tri = trois !",wrong:"Un triangle a **3** côtés ! Tri = trois, comme tricycle (3 roues) !"}},{id:"s4",type:"info",emoji:"🌍",title:"Les formes dans la vie",body:`🪟 Fenêtre → **rectangle**
+🍕 Part de pizza → **triangle**
+🎡 Roue → **cercle**
+🗂️ Livre → **rectangle**
+⏹️ Carrelage → **carré**`,tip:"Cherche des formes autour de toi !"},{id:"s5",type:"question",emoji:"🧠",title:"Dans la vie !",question:"Quelle forme est un écran de télévision ?",choices:["cercle","triangle","rectangle","losange"],correct:2,feedback:{correct:"Oui ! 📺 Un écran de TV est un **rectangle** !",wrong:"La bonne réponse est **rectangle** ! Un écran est plus large que haut."}},{id:"s6",type:"info",emoji:"📐",title:"Le périmètre",body:`Le **périmètre**, c'est la longueur du **tour** d'une figure.
+
+Comme si tu marchais tout autour — la distance totale, c'est le périmètre !`,tip:"Utilise ta règle pour mesurer chaque côté et additionne !",highlight:!0,isEnd:!0}]}];function o(e){return n.find(t=>t.id===e)||null}function s(e,t){return n.filter(i=>i.subject===e&&i.grade.includes(t))}export{n as L,o as a,s as g};

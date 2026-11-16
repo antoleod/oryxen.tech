@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flowline settings">
+  <defs>
+    <linearGradient id="c" x1="12" x2="52" y1="10" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#37E6C8"/>
+      <stop offset=".55" stop-color="#4DD2FF"/>
+      <stop offset="1" stop-color="#9D7CFF"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#c)" d="m36.4 6 2.3 7.3c1.5.5 2.9 1.1 4.2 2l7-3.5 5.8 10-6.2 4.7c.1.9.2 1.8.2 2.8s-.1 1.9-.2 2.8l6.2 4.7-5.8 10-7-3.5a22 22 0 0 1-4.2 2L36.4 58H24.8l-2.3-7.3a22 22 0 0 1-4.2-2l-7 3.5-5.8-10 6.2-4.7a22 22 0 0 1 0-5.6l-6.2-4.7 5.8-10 7 3.5c1.3-.9 2.7-1.5 4.2-2L24.8 6h11.6Z"/>
+  <circle cx="30.6" cy="32" r="10.5" fill="#06101F" fill-opacity=".38"/>
+  <circle cx="30.6" cy="32" r="6" fill="#fff" fill-opacity=".82"/>
+</svg>

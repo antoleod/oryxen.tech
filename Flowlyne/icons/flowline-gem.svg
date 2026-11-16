@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flowline energy gem">
+  <defs>
+    <linearGradient id="g" x1="10" x2="54" y1="8" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6FE0"/>
+      <stop offset=".52" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#4DD2FF"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path fill="url(#g)" filter="url(#glow)" d="M17 8h30l11 17-26 33L6 25 17 8Z"/>
+  <path fill="#fff" fill-opacity=".26" d="M17 8h30L32 25 17 8Z"/>
+  <path fill="#06101F" fill-opacity=".22" d="M6 25h52L32 58 6 25Z"/>
+  <path fill="none" stroke="#fff" stroke-opacity=".72" stroke-width="2.5" stroke-linejoin="round" d="M17 8h30l11 17-26 33L6 25 17 8Z"/>
+  <path fill="none" stroke="#fff" stroke-opacity=".36" stroke-width="2" d="M6 25h52M17 8l15 50M47 8 32 58M17 8l15 17L47 8"/>
+</svg>
