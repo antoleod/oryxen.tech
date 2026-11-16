@@ -1,1 +1,134 @@
 .about,#process,#stack,.contact,.footer{content-visibility:auto;contain-intrinsic-block-size:auto 600px;}.hero__orb--1,.hero__orb--2{will-change:transform;}a,button{-webkit-tap-highlight-color:rgba(139,92,246,0.15);}
+
+/* ============================================================
+   ORYXEN 2026 CUTTING-EDGE UI/UX ENHANCEMENTS
+   ============================================================ */
+
+/* Pulse Ring on Hero dot */
+.hero__eyebrow .dot {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 12px rgba(52, 211, 153, 0.7);
+}
+.hero__eyebrow .dot::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 2px solid rgba(52, 211, 153, 0.7);
+  animation: oryxenPulse 2.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+@keyframes oryxenPulse {
+  0% { transform: scale(0.6); opacity: 1; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* Dynamic Spotlight Hover Effect (Linear / Stripe style) */
+.product-card, .process__step, .stack-cat {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s;
+}
+.product-card::before, .process__step::before, .stack-cat::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(350px circle at var(--mouse-x, -999px) var(--mouse-y, -999px), rgba(139, 92, 246, 0.16), transparent 75%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+.product-card:hover::before, .process__step:hover::before, .stack-cat:hover::before {
+  opacity: 1;
+}
+.product-card > *, .process__step > *, .stack-cat > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Category Filter Tabs */
+.products__filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2.2rem;
+  flex-wrap: wrap;
+}
+.filter-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  color: var(--text-2);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.filter-tab span {
+  font-size: 0.72rem;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-3);
+  font-family: var(--font-mono);
+}
+.filter-tab:hover {
+  background: var(--card-hover);
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+.filter-tab.active {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.25), rgba(59, 130, 246, 0.16));
+  border-color: rgba(139, 92, 246, 0.5);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
+}
+.filter-tab.active span {
+  background: rgba(139, 92, 246, 0.35);
+  color: #fff;
+}
+
+/* Copy Link Button on Product Card */
+.product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+.product-card__copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-3);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.product-card__copy:hover {
+  color: var(--text);
+  border-color: var(--card-border);
+  background: rgba(255, 255, 255, 0.06);
+}
+.product-card__copy.copied {
+  color: var(--success-light);
+  border-color: rgba(52, 211, 153, 0.35);
+  background: rgba(52, 211, 153, 0.12);
+}
