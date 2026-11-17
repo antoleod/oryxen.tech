@@ -1,4 +1,4 @@
-const BUILD = 'b3e2635340c6';
+const BUILD = 'd05339aac083';
 const CACHE_NAME = 'MyKit-shell-' + BUILD;
 const RUNTIME_CACHE = 'MyKit-static-' + BUILD;
 const BASE = self.location.pathname.replace(/\/sw\.js$/, '');
@@ -12,7 +12,7 @@ const APP_SHELL = [
   "/mykit/favicon.png",
   "/mykit/icon-192.png",
   "/mykit/icon-512.png",
-  "/mykit/AppEntry-605253f028980facf4aecc88356d13c8.js"
+  "/mykit/AppEntry-30f15084cd5558d126cc46b18234fa29.js"
 ];
 const STATIC_EXTENSIONS = /\.(js|css|woff2?|ttf|otf|eot|png|jpg|jpeg|gif|svg|ico|webp)(\?.*)?$/i;
 
